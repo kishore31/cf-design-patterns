@@ -1,9 +1,9 @@
 <cfcomponent displayname="com.brianflove.duck.Duck" output="false">
-	<cfproperty name="flyBehavior" type="FlyBehavior">
-	<cfproperty name="quackBehavior" type="QuackBehavior">
+	<cfproperty name="variables.flyBehavior" type="FlyBehavior">
+	<cfproperty name="variables.quackBehavior" type="QuackBehavior">
 	
-	<cffunction name="display" returntype="void" output="false" access="public">
-		<cfthrow message="display() method in com.brianflove.Duck is abstract">
+	<cffunction name="display" returntype="void" output="false" access="public" hint="Im an abstract function">
+		<cfthrow message="display() method in com.brianflove.duck.Duck is abstract">
 	</cffunction>
 	
 	<cffunction name="performFly" returntype="void" access="public">
