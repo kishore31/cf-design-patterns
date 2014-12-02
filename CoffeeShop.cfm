@@ -7,6 +7,7 @@
 	espresso2 = createObject("component", "com.brianflove.beverage.Espresso").init();
 	espresso2 = createObject("component", "com.brianflove.beverage.Mocha").init(espresso2);
 	espresso2 = createObject("component", "com.brianflove.beverage.Mocha").init(espresso2);
+	
 	espresso2 = createObject("component", "com.brianflove.beverage.Whip").init(espresso2);
 	WriteOutput(espresso2.getDescription() & ' $' & espresso2.cost());
 	
